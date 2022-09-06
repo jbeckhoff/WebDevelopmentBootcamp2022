@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+
+    <form action="/tacos">
+      <p>
+        <label for="username">Enter username:</label>
+        <input
+          type="text"
+          placeholder="username"
+          id="username"
+          name="username"
+        />
+      </p>
+      <p>
+        <label for="password">Enter password:</label>
+        <input type="password" name="" id="password" name="password" />
+      </p>
+      <p>
+        <label for="color">Enter a color:</label>
+        <input type="color" name="" id="color" />
+      </p>
+      <p>
+        <label for="number">Enter a number:</label>
+        <input type="number" name="" id="number" />
+      </p>
+      <p>
+        <button>Submit</button>
+      </p>
+    </form>
+
+    <form action="/birds">
+      <input type="checkbox" name="agree_tos" id="agree" />
+      <label for="agree">I agree to everything</label>
+      <p>
+        <label for="xs">XS:</label>
+        <input type="radio" name="size" id="xs" value="xs" />
+        <label for="lg">LG:</label>
+        <input type="radio" name="size" id="lg" value="lg" />
+        <label for="xl">XL:</label>
+        <input type="radio" name="size" id="xl" value="xl" />
+      </p>
+      <p>
+        <input
+          type="range"
+          name="volume"
+          id="volume"
+          min="0"
+          max="100"
+          step="5"
+        />
+        <label for="volumn">Volume</label>
+      </p>
+      <p>
+        <textarea name="text" id="text" cols="30" rows="10"></textarea>
+        <label for="text"></label>
+      </p>
+      <button>Submit</button>
+    </form>
+
+    <h2>Validations form</h2>
+    <form action="/dummy">
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="username"
+        required
+      />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="password"
+        minlength="6"
+        required
+      />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
